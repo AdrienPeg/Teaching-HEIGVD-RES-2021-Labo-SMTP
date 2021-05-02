@@ -27,20 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigurationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigurationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/IConfigurationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/IConfigurationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/mail/Groupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Groupe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/mail/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/mail/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/Prank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/Prank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/smtp/ISmtpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/smtp/ISmtpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/smtp/SmtpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/smtp/SmtpClient.java" afterDir="false" />
-    </list>
+    <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619865680457</updated>
       <workItem from="1619865682110" duration="8911000" />
+      <workItem from="1619979563909" duration="13000" />
     </task>
     <servers />
   </component>
@@ -189,12 +177,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>
-          <line>41</line>
+          <line>48</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>
-          <line>47</line>
+          <line>54</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
