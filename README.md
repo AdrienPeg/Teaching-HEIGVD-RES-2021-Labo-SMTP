@@ -1,6 +1,6 @@
 # Teaching-HEIGVD-RES-2021-Labo-SMTP
 
-Par Michael Ruckstuhl est Adrien Peguiron
+Par Michael Ruckstuhl et Adrien Peguiron
 
 ## Description
 
@@ -23,9 +23,9 @@ Sources : https://github.com/tweakers/MockMock
 
 ## Mise en place d'un serveur "mock SMTP" via Docker
 
-Dans le dossier docker se trouve un jar permettant dans lancer MockMock qui écoutera sur le port 25 et écrira les mail sur le port 8282
+Dans le dossier docker se trouve un jar permettant dans lancer MockMock qui écoutera sur le port 25 et écrira les mails sur le port 8282
 
-Pour le lancer, dans le dossier docker en ligne de commande, taper les commandes suivantes:
+Pour le lancer, dans le dossier "docker" en ligne de commande, taper les commandes suivantes:
 
 > docker build --tag monmock .  
 > docker run -p 25:25 8282:8282 monmock
