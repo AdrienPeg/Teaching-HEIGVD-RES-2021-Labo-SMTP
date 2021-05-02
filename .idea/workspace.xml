@@ -28,11 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/IConfigurationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/messages.utf8" beforeDir="false" afterPath="$PROJECT_DIR$/config/messages.utf8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="smtp" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -68,17 +69,37 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.Main" />
+      <module name="Smpt_Prank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,16 +126,61 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1619868870600">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1619868870600" />
-    <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1619867146111">
+    <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1619961890206">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1619867146111" />
+    <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1619961890206" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1619965434983">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1619965434983">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1619965434983">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1619965434983">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state x="121" y="51" key="MergeDialog" timestamp="1619959760406">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1619959760406" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1619965453334">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1619965453334" />
+    <state x="334" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1619959742918">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="334" y="54" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680" timestamp="1619959742918" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1619877705186">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

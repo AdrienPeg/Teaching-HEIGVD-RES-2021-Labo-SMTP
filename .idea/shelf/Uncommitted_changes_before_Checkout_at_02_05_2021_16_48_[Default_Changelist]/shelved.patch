@@ -1,0 +1,99 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:upstream\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0ebf7281-2daf-4cbe-bb43-6f3248d6a591\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/prank/Prank.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/prank/Prank.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/model/prank/Prank.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/model/prank/Prank.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHome\" value=\"C:\\Program Files\\JetBrains\\IntelliJ IDEA 2020.2.2\\plugins\\maven\\lib\\maven3\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1rvnxUxNkkyUkfRGxcQUOTVS451\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"main.java.Main\" />\r\n      <module name=\"Smpt_Prank\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"main.java.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"ArquillianTestNG\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0ebf7281-2daf-4cbe-bb43-6f3248d6a591\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1619865680457</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1619865680457</updated>\r\n      <workItem from=\"1619865682110\" duration=\"8911000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"371\" y=\"96\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog\" timestamp=\"1619868870600\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"371\" y=\"96\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1619868870600\" />\r\n    <state x=\"446\" y=\"42\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1619961890206\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"446\" y=\"42\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680\" timestamp=\"1619961890206\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1619965434983\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965434983\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.center\" timestamp=\"1619965434983\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965434983\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.left\" timestamp=\"1619965434983\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965434983\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.right\" timestamp=\"1619965434983\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965434983\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1619965435215\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965435215\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.center\" timestamp=\"1619965435215\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965435215\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.left\" timestamp=\"1619965435215\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965435215\" />\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.right\" timestamp=\"1619965435215\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"1237\" height=\"204\" key=\"GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965435215\" />\r\n    <state x=\"121\" y=\"51\" key=\"MergeDialog\" timestamp=\"1619959760406\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"121\" y=\"51\" key=\"MergeDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1619959760406\" />\r\n    <state width=\"647\" height=\"347\" key=\"XDebugger.FullValuePopup\" timestamp=\"1619965453334\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state width=\"647\" height=\"347\" key=\"XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680\" timestamp=\"1619965453334\" />\r\n    <state x=\"334\" y=\"54\" key=\"git4idea.branch.GitSmartOperationDialog\" timestamp=\"1619959742918\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"334\" y=\"54\" key=\"git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1619959742918\" />\r\n    <state x=\"303\" y=\"1\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1619877705186\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"303\" y=\"1\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1280.680@0.0.1280.680\" timestamp=\"1619877705186\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>\r\n          <line>34</line>\r\n          <option name=\"timeStamp\" value=\"5\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>\r\n          <line>40</line>\r\n          <option name=\"timeStamp\" value=\"6\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 363cc92e31c83befc4577489283f8f5a107ac6b9)
++++ .idea/workspace.xml	(date 1619966127860)
+@@ -27,11 +27,7 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/prank/Prank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/prank/Prank.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/Prank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/Prank.java" afterDir="false" />
+-    </list>
++    <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -139,38 +135,38 @@
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1619961890206" />
+-    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1619965434983">
++    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1619965719515">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+-    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1619965434983">
++    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965719515" />
++    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1619965719513">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+-    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1619965434983">
++    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619965719513" />
++    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1619965719513">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+-    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1619965434983">
++    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619965719513" />
++    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1619965719514">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1619965435215">
++    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619965719514" />
++    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1619965505677">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1619965435215">
++    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965505677" />
++    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1619965505677">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1619965435215">
++    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1619965505677" />
++    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1619965505677">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1619965435215">
++    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1619965505677" />
++    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1619965505677">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
++    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1619965505677" />
+     <state x="121" y="51" key="MergeDialog" timestamp="1619959760406">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+@@ -188,20 +184,4 @@
+     </state>
+     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1619877705186" />
+   </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>
+-          <line>34</line>
+-          <option name="timeStamp" value="5" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>
+-          <line>40</line>
+-          <option name="timeStamp" value="6" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+ </project>
+\ No newline at end of file
