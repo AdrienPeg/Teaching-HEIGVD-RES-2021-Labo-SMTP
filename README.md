@@ -74,3 +74,11 @@ Cette classe représente les personnes à pranker.
 - Message     
 
 Cette classe permets de modifier ou récupérer certaines parties spécifiques d'un mail. Ces parties sont le sujet, le corps, l'envoyeur, les destinataire et les copies carbones.
+
+## Dialogue entre le client et un serveur SMTP
+
+Une fois le client connecté au serveur, ce dernier va envoyer un message indiquant son nom et sa version ainsi que le nom du client connecté (ici le nom de mon ordinateur est 7PTJ0V8) : <img width="351" alt="discussion1" src="https://user-images.githubusercontent.com/59923079/116818294-ee6dfa00-ab6a-11eb-9878-51e5d6da096d.png">
+ 
+Ensuite, à chaque fois que des données sont enregistrées par le serveur comme un destinataire du mail ou le sujet, le serveur indique que c'est bien enregistré : <img width="49" alt="discussion2" src="https://user-images.githubusercontent.com/59923079/116818391-59b7cc00-ab6b-11eb-99b0-ebc45a5e15af.png">
+
+Finalement, une fois le mail terminé avec la suite de caractères "\r\n.\r\n", le serveur indique que l'enregistrement des données est terminé : <img width="221" alt="discussion3" src="https://user-images.githubusercontent.com/59923079/116818429-8cfa5b00-ab6b-11eb-930b-c2cddcbf74cb.png">
