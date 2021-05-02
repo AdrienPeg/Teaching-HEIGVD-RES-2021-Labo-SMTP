@@ -1,0 +1,185 @@
+Index: src/main/java/model/mail/Message.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package main.java.model.mail;\r\n\r\npublic class Message {\r\n\r\n    private String from;\r\n    private String[] to = new String[0];\r\n    private String[] cc = new String[0];\r\n    private String[] bcc = new String[0];\r\n    private String subject;\r\n    private String body;\r\n\r\n    public String getFrom() {\r\n        return from;\r\n    }\r\n\r\n    public void setFrom(String from) {\r\n        this.from = from;\r\n    }\r\n\r\n    public String[] getTo() {\r\n        return to;\r\n    }\r\n\r\n    public void setTo(String[] to) {\r\n        this.to = to;\r\n    }\r\n\r\n    public String[] getCc() {\r\n        return cc;\r\n    }\r\n\r\n    public void setCc(String[] cc) {\r\n        this.cc = cc;\r\n    }\r\n\r\n    public String[] getBcc() {\r\n        return bcc;\r\n    }\r\n\r\n    public void setBcc(String[] bcc) {\r\n        this.bcc = bcc;\r\n    }\r\n\r\n    public String getSubject() {\r\n        return subject;\r\n    }\r\n\r\n    public void setSubject(String subject) {\r\n        this.subject = subject;\r\n    }\r\n\r\n    public String getBody() {\r\n        return body;\r\n    }\r\n\r\n    public void setBody(String body) {\r\n        this.body = body;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/model/mail/Message.java	(revision a9db1932180f155cb46105acef2e74c67a175495)
++++ src/main/java/model/mail/Message.java	(date 1619959635089)
+@@ -5,42 +5,21 @@
+     private String from;
+     private String[] to = new String[0];
+     private String[] cc = new String[0];
+-    private String[] bcc = new String[0];
+     private String subject;
+     private String body;
+ 
+-    public String getFrom() {
+-        return from;
+-    }
+-
+     public void setFrom(String from) {
+         this.from = from;
+     }
+ 
+-    public String[] getTo() {
+-        return to;
+-    }
+-
+     public void setTo(String[] to) {
+         this.to = to;
+     }
+ 
+-    public String[] getCc() {
+-        return cc;
+-    }
+-
+     public void setCc(String[] cc) {
+         this.cc = cc;
+     }
+ 
+-    public String[] getBcc() {
+-        return bcc;
+-    }
+-
+-    public void setBcc(String[] bcc) {
+-        this.bcc = bcc;
+-    }
+-
+     public String getSubject() {
+         return subject;
+     }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:upstream\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0ebf7281-2daf-4cbe-bb43-6f3248d6a591\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/config/ConfigurationManager.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/config/IConfigurationManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/config/messages.utf8\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/config/messages.utf8\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHome\" value=\"C:\\Program Files\\JetBrains\\IntelliJ IDEA 2020.2.2\\plugins\\maven\\lib\\maven3\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1rvnxUxNkkyUkfRGxcQUOTVS451\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0ebf7281-2daf-4cbe-bb43-6f3248d6a591\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1619865680457</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1619865680457</updated>\r\n      <workItem from=\"1619865682110\" duration=\"8911000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"371\" y=\"96\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog\" timestamp=\"1619868870600\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"371\" y=\"96\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1619868870600\" />\r\n    <state x=\"446\" y=\"42\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1619867146111\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"446\" y=\"42\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680\" timestamp=\"1619867146111\" />\r\n    <state x=\"303\" y=\"1\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1619877705186\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"303\" y=\"1\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1280.680@0.0.1280.680\" timestamp=\"1619877705186\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision a9db1932180f155cb46105acef2e74c67a175495)
++++ .idea/workspace.xml	(date 1619959635491)
+@@ -28,11 +28,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/config/ConfigurationManager.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/config/IConfigurationManager.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/config/messages.utf8" beforeDir="false" afterPath="$PROJECT_DIR$/config/messages.utf8" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/model/mail/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Message.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -47,6 +45,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="smtp" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MavenImportPreferences">
+@@ -67,19 +70,6 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+   </component>
+-  <component name="RunManager">
+-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+-      <option name="arquillianRunConfiguration">
+-        <value>
+-          <option name="containerStateName" value="" />
+-        </value>
+-      </option>
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -105,6 +95,7 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1619868870600">
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Teaching-HEIGVD-RES-2021-Labo-SMTP\r\n\r\n## Objectives\r\n\r\nIn this lab, you will develop a client application (TCP) in Java. This client application will use the Socket API to communicate with an SMTP server. The code that you write will include a **partial implementation of the SMTP protocol**. These are the objectives of the lab:\r\n\r\n* Make practical experiments to become familiar with the **SMTP protocol**. After the lab, you should be able to use a command line tool to **communicate with an SMTP server**. You should be able to send well-formed messages to the server, in order to send emails to the address of your choice.\r\n\r\n* Understand the notions of **test double** and **mock server**, which are useful when developing and testing a client-server application. During the lab, you will setup and use such a **mock server**.\r\n\r\n* Understand what it means to **implement the SMTP protocol** and be able to send e-mail messages, by working directly on top of the Socket API (i.e. you are not allowed to use a SMTP library).\r\n\r\n* **See how easy it is to send forged e-mails**, which appear to be sent by certain people but in reality are issued by malicious users.\r\n\r\n* **Design a simple object-oriented model** to implement the functional requirements described in the next paragraph.\r\n\r\n\r\n## Functional requirements\r\n\r\nYour mission is to develop a client application that automatically plays pranks on a list of victims:\r\n\r\n* The user should be able to **define a list of victims** (concretely, you should be able to create a file containing a list of e-mail addresses).\r\n* The user should be able to **define how many groups of victims should be formed** in a given campaign. In every group of victims, there should be 1 sender and at least 2 recipients (i.e. the minimum size for a group is 3).\r\n* The user should be able to **define a list of e-mail messages**. When a prank is played on a group of victims, then one of these messages should be selected. **The mail should be sent to all group recipients, from the address of the group sender**. In other words, the recipient victims should be lead to believe that the sender victim has sent them.\r\n\r\n## Constraints\r\n\r\n- The goal is for you to work at the wire protocol level (with the Socket API). Therefore, you CANNOT use a library that takes care of the protocol details. You have to work with the input and output streams.\r\n- The program must be configurable: the addresses, groups, messages CANNOT be hard-coded in the program and MUST be managed in config files.\r\n\r\n\r\n## Example\r\n\r\nConsider that your program generates a group G1. The group sender is Bob. The group recipients are Alice, Claire and Peter. When the prank is played on group G1, then your program should pick one of the fake messages. It should communicate with an SMTP server, so that Alice, Claire and Peter receive an e-mail, which appears to be sent by Bob.\r\n\r\n## Teams\r\n\r\nYou may work in teams of 2 students.\r\n\r\n## Deliverables\r\n\r\nYou will deliver the results of your lab in a GitHub repository. You do not have to fork a specific repo, you can create one from scratch.\r\n\r\nYour repository should contain both the source code of your Java project and your report. Your report should be a single `README.md` file, located at the root of your repository. The images should be placed in a `figures` directory.\r\n\r\nYour report MUST include the following sections:\r\n\r\n* **A brief description of your project**: if people exploring GitHub find your repo, without a prior knowledge of the RES course, they should be able to understand what your repo is all about and whether they should look at it more closely.\r\n\r\n* **Instructions for setting up a mock SMTP server (with Docker - which you will learn all about in the next 2 weeks)**. The user who wants to experiment with your tool but does not really want to send pranks immediately should be able to use a mock SMTP server. For people who are not familiar with this concept, explain it to them in simple terms. Explain which mock server you have used and how you have set it up.\r\n\r\n* **Clear and simple instructions for configuring your tool and running a prank campaign**. If you do a good job, an external user should be able to clone your repo, edit a couple of files and send a batch of e-mails in less than 10 minutes.\r\n\r\n* **A description of your implementation**: document the key aspects of your code. It is probably a good idea to start with a class diagram. Decide which classes you want to show (focus on the important ones) and describe their responsibilities in text. It is also certainly a good idea to include examples of dialogues between your client and an SMTP server (maybe you also want to include some screenshots here).\r\n## References\r\n\r\n* [MockMock server](<https://github.com/tweakers/MockMock>) on GitHub. Pay attention to this [pull request](https://github.com/tweakers/MockMock/pull/8). While it has not been merged, it will give you the solution to compile the project on your machine.\r\n* The [mailtrap](<https://mailtrap.io/>) online service for testing SMTP\r\n* The [SMTP RFC](<https://tools.ietf.org/html/rfc5321#appendix-D>), and in particular the [example scenario](<https://tools.ietf.org/html/rfc5321#appendix-D>)\r\n* Testing SMTP with TLS: `openssl s_client -connect smtp.mailtrap.io:2525 -starttls smtp -crlf`\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision a9db1932180f155cb46105acef2e74c67a175495)
++++ README.md	(date 1619958999555)
+@@ -1,37 +1,43 @@
+ # Teaching-HEIGVD-RES-2021-Labo-SMTP
+ 
+-## Objectives
++## Description
++
++Ce projet a pour but de générer des e-mails à partir de fausses adresses pour faire des blagues à vos amis. Les messages sont envoyés à des groupes d'au moins trois personnes dont une est aléatoirement choisie pour envoyer le mail.  Vous pouvez entièrement customiser l'adresse d'envoi ainsi que les destinataires et les messages envoyés. Le mieux dans tout ça, vous victimes ne sauront jamais que c'est vous derrière le mail du prince du nigeria leur offrant 50 millions. 
++
++
++## Mise en place d'un serveur "mock SMTP"
+ 
+-In this lab, you will develop a client application (TCP) in Java. This client application will use the Socket API to communicate with an SMTP server. The code that you write will include a **partial implementation of the SMTP protocol**. These are the objectives of the lab:
++Il peut-être pratique de tester les fonctionnalité du programme sur un serveur mock. Pour le mettre en place, rien de plus simple. Il faut d'abord vous assurez d'avoir Java 7 runtime environment sur votre machine. Si ce n'est pas le cas, vous pouvez simplement le télécharger [ici](http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html). 
+ 
+-* Make practical experiments to become familiar with the **SMTP protocol**. After the lab, you should be able to use a command line tool to **communicate with an SMTP server**. You should be able to send well-formed messages to the server, in order to send emails to the address of your choice.
++Ensuite, il suffit de télécharger MockMock avec ce [lien](https://github.com/tweakers-dev/MockMock/blob/master/release/MockMock.jar?raw=true).
+ 
+-* Understand the notions of **test double** and **mock server**, which are useful when developing and testing a client-server application. During the lab, you will setup and use such a **mock server**.
++Une fois MockMock installé, ouvrez une invite de commande et rendez-vous dans le répértoire où il a été téléchargé et entrez la commande suivante : `java -jar MockMock.jar` 
+ 
+-* Understand what it means to **implement the SMTP protocol** and be able to send e-mail messages, by working directly on top of the Socket API (i.e. you are not allowed to use a SMTP library).
++MockMock est désormais lancé et prêt à être utilisé sur le port 25 pour SMTP et sur le port 8282 pour l'interface web. Vous pouvez accéder à l'interface web en entrant l'url suivante sur votre navigateur : `localhost:8282`. 
+ 
+-* **See how easy it is to send forged e-mails**, which appear to be sent by certain people but in reality are issued by malicious users.
++Si vous souhaitez changer les port SMTP et HTTP, vous pouvez le faire au lancement : `java -jar MockMock.jar -p SmtpPort -h HttpPort`
+ 
+-* **Design a simple object-oriented model** to implement the functional requirements described in the next paragraph.
++Sources : https://github.com/tweakers/MockMock
+ 
++## Utiliser le programme.
+ 
+-## Functional requirements
++Avant de lancer le programme et de piéger vos amis, quelques manipulations sont nécessaires. La première étant de cloner ce repo sur votre machine. Vous pouvez le faire avec la commande suivante : `git clone https://github.com/AdrienPeg/Teaching-HEIGVD-RES-2021-Labo-SMTP.git SmtpPrank`
+ 
+-Your mission is to develop a client application that automatically plays pranks on a list of victims:
++Dirigez-vous ensuite dans votre nouveau dossier "SmtpPrank" et ouvrez le dossier config. Ici, vous trouverez 3 fichiers de configuration à remplir par vos soins.
+ 
+-* The user should be able to **define a list of victims** (concretely, you should be able to create a file containing a list of e-mail addresses).
+-* The user should be able to **define how many groups of victims should be formed** in a given campaign. In every group of victims, there should be 1 sender and at least 2 recipients (i.e. the minimum size for a group is 3).
+-* The user should be able to **define a list of e-mail messages**. When a prank is played on a group of victims, then one of these messages should be selected. **The mail should be sent to all group recipients, from the address of the group sender**. In other words, the recipient victims should be lead to believe that the sender victim has sent them.
++- Le fichier config.properties vous permet de déterminer l'adresse et le port du serveur SMTP, le nombre de groupes à pranker et les témoins à mettre en copie.
+ 
+-## Constraints
++- Le fichier messages.utf8 contient les messages à envoyer à vos victimes. ceux-ci doivent être séparés par "==".
++- Le fichier victims.utf8 contient les adresses mails des futurs prankés. Attention ! il est nécessaire d'avoir au moins 3 personnes par groupe. Si vous avez choisis d'envoyer vos messages à 8 groupes, il vous faut au minimum 24 adresses mails différentes. Il est également nécessaire d'avoir un message par groupe.
+ 
+-- The goal is for you to work at the wire protocol level (with the Socket API). Therefore, you CANNOT use a library that takes care of the protocol details. You have to work with the input and output streams.
+-- The program must be configurable: the addresses, groups, messages CANNOT be hard-coded in the program and MUST be managed in config files.
++Une fois les 3 fichiers modifiés comme bon vous semble, ouvrez le dossier "SmtpPrank" en tant que projet sur un éditeur de code, et lancez la fonction main se trouvant dans src/main/java/Main.java. 
+ 
+ 
+-## Example
++## Description du code
+ 
+-Consider that your program generates a group G1. The group sender is Bob. The group recipients are Alice, Claire and Peter. When the prank is played on group G1, then your program should pick one of the fake messages. It should communicate with an SMTP server, so that Alice, Claire and Peter receive an e-mail, which appears to be sent by Bob.
++Ce projet comporte 8 classes et 2 interfaces. Les détails de chaque classe sont indiqués ci-dessous
++
++- Classe ConfigurationManager
+ 
+ ## Teams
+ 

@@ -10,7 +10,7 @@ import java.net.Socket;
 public class SmtpClient implements ISmtpClient {
 
     private String smtpServerAddress;
-    private int smtpServerPort = 2525;
+    private int smtpServerPort;
 
     private PrintWriter writer;
     private BufferedReader reader;

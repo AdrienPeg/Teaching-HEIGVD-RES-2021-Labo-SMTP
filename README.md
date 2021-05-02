@@ -1,61 +1,76 @@
 # Teaching-HEIGVD-RES-2021-Labo-SMTP
 
-## Objectives
+## Description
 
-In this lab, you will develop a client application (TCP) in Java. This client application will use the Socket API to communicate with an SMTP server. The code that you write will include a **partial implementation of the SMTP protocol**. These are the objectives of the lab:
-
-* Make practical experiments to become familiar with the **SMTP protocol**. After the lab, you should be able to use a command line tool to **communicate with an SMTP server**. You should be able to send well-formed messages to the server, in order to send emails to the address of your choice.
-
-* Understand the notions of **test double** and **mock server**, which are useful when developing and testing a client-server application. During the lab, you will setup and use such a **mock server**.
-
-* Understand what it means to **implement the SMTP protocol** and be able to send e-mail messages, by working directly on top of the Socket API (i.e. you are not allowed to use a SMTP library).
-
-* **See how easy it is to send forged e-mails**, which appear to be sent by certain people but in reality are issued by malicious users.
-
-* **Design a simple object-oriented model** to implement the functional requirements described in the next paragraph.
+Ce projet a pour but de générer des e-mails à partir de fausses adresses pour faire des blagues à vos amis. Les messages sont envoyés à des groupes d'au moins trois personnes dont une est aléatoirement choisie pour envoyer le mail.  Vous pouvez entièrement customiser l'adresse d'envoi ainsi que les destinataires et les messages envoyés. Le mieux dans tout ça, vous victimes ne sauront jamais que c'est vous derrière le mail du prince du nigeria leur offrant 50 millions. 
 
 
-## Functional requirements
+## Mise en place d'un serveur "mock SMTP"
 
-Your mission is to develop a client application that automatically plays pranks on a list of victims:
+Il peut-être pratique de tester les fonctionnalité du programme sur un serveur mock. Pour le mettre en place, rien de plus simple. Il faut d'abord vous assurez d'avoir Java 7 runtime environment sur votre machine. Si ce n'est pas le cas, vous pouvez simplement le télécharger [ici](http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html). 
 
-* The user should be able to **define a list of victims** (concretely, you should be able to create a file containing a list of e-mail addresses).
-* The user should be able to **define how many groups of victims should be formed** in a given campaign. In every group of victims, there should be 1 sender and at least 2 recipients (i.e. the minimum size for a group is 3).
-* The user should be able to **define a list of e-mail messages**. When a prank is played on a group of victims, then one of these messages should be selected. **The mail should be sent to all group recipients, from the address of the group sender**. In other words, the recipient victims should be lead to believe that the sender victim has sent them.
+Ensuite, il suffit de télécharger MockMock avec ce [lien](https://github.com/tweakers-dev/MockMock/blob/master/release/MockMock.jar?raw=true).
 
-## Constraints
+Une fois MockMock installé, ouvrez une invite de commande et rendez-vous dans le répértoire où il a été téléchargé et entrez la commande suivante : `java -jar MockMock.jar` 
 
-- The goal is for you to work at the wire protocol level (with the Socket API). Therefore, you CANNOT use a library that takes care of the protocol details. You have to work with the input and output streams.
-- The program must be configurable: the addresses, groups, messages CANNOT be hard-coded in the program and MUST be managed in config files.
+MockMock est désormais lancé et prêt à être utilisé sur le port 25 pour SMTP et sur le port 8282 pour l'interface web. Vous pouvez accéder à l'interface web en entrant l'url suivante sur votre navigateur : `localhost:8282`. 
+
+Si vous souhaitez changer les port SMTP et HTTP, vous pouvez le faire au lancement : `java -jar MockMock.jar -p SmtpPort -h HttpPort`
+
+Sources : https://github.com/tweakers/MockMock
+
+## Utiliser le programme.
+
+Avant de lancer le programme et de piéger vos amis, quelques manipulations sont nécessaires. La première étant de cloner ce repo sur votre machine. Vous pouvez le faire avec la commande suivante : `git clone https://github.com/AdrienPeg/Teaching-HEIGVD-RES-2021-Labo-SMTP.git SmtpPrank`
+
+Dirigez-vous ensuite dans votre nouveau dossier "SmtpPrank" et ouvrez le dossier config. Ici, vous trouverez 3 fichiers de configuration à remplir par vos soins.
+
+- Le fichier config.properties vous permet de déterminer l'adresse et le port du serveur SMTP, le nombre de groupes à pranker et les témoins à mettre en copie.
+
+- Le fichier messages.utf8 contient les messages à envoyer à vos victimes. ceux-ci doivent être séparés par "==".
+- Le fichier victims.utf8 contient les adresses mails des futurs prankés. Attention ! il est nécessaire d'avoir au moins 3 personnes par groupe. Si vous avez choisis d'envoyer vos messages à 8 groupes, il vous faut au minimum 24 adresses mails différentes. Il est également nécessaire d'avoir un message par groupe.
+
+Une fois les 3 fichiers modifiés comme bon vous semble, ouvrez le dossier "SmtpPrank" en tant que projet sur un éditeur de code, et lancez la fonction main se trouvant dans src/main/java/Main.java. 
 
 
-## Example
+## Description du code
 
-Consider that your program generates a group G1. The group sender is Bob. The group recipients are Alice, Claire and Peter. When the prank is played on group G1, then your program should pick one of the fake messages. It should communicate with an SMTP server, so that Alice, Claire and Peter receive an e-mail, which appears to be sent by Bob.
+Ce projet comporte 8 classes et 2 interfaces. Les détails de chaque classe sont indiqués ci-dessous
 
-## Teams
+![image-20210502154720615](C:\Users\Don Peg\AppData\Roaming\Typora\typora-user-images\image-20210502154720615.png)
 
-You may work in teams of 2 students.
+Les fonctions getTo et getCC retournent un tableau de String, mais le logiciel de création d'UML n'acceptait pas les "[]" comme retour de fonction. Il n'acceptait également pas les "<>" comme paramètres de fonction. C'est pourquoi à certains endroit des tirets sont utilisés.
 
-## Deliverables
+Nous avons réalisé ce projet en nous aidant du cours, plus particulièrement de la [4ème vidéo de présentation du laboratoire](https://www.youtube.com/watch?v=OrSdRCt_6YQ). 
 
-You will deliver the results of your lab in a GitHub repository. You do not have to fork a specific repo, you can create one from scratch.
+- ConfigurationManager 
 
-Your repository should contain both the source code of your Java project and your report. Your report should be a single `README.md` file, located at the root of your repository. The images should be placed in a `figures` directory.
+Cette classe permet de récupérer toutes les informations importantes pour créer les pranks. Son but est de récupérer les données enregistrées dans les fichiers de configurations pour ensuite les transférer à PrankGenerator. ConfigurationManager implémente l'interface IConfigurationManager
 
-Your report MUST include the following sections:
+- PrankGenerator
 
-* **A brief description of your project**: if people exploring GitHub find your repo, without a prior knowledge of the RES course, they should be able to understand what your repo is all about and whether they should look at it more closely.
+Cette classe se charge de créer les groupes qui seront piégés ainsi que de créer une prank pour chaque groupe.
 
-* **Instructions for setting up a mock SMTP server (with Docker - which you will learn all about in the next 2 weeks)**. The user who wants to experiment with your tool but does not really want to send pranks immediately should be able to use a mock SMTP server. For people who are not familiar with this concept, explain it to them in simple terms. Explain which mock server you have used and how you have set it up.
+- SmtpClient
 
-* **Clear and simple instructions for configuring your tool and running a prank campaign**. If you do a good job, an external user should be able to clone your repo, edit a couple of files and send a batch of e-mails in less than 10 minutes.
+Cette classe permet d'envoyer les mails de prank avec le protocole SMTP puis de fermer la connexion SMTP. SmtpClient implémente l'interface ISmtpClient.
 
-* **A description of your implementation**: document the key aspects of your code. It is probably a good idea to start with a class diagram. Decide which classes you want to show (focus on the important ones) and describe their responsibilities in text. It is also certainly a good idea to include examples of dialogues between your client and an SMTP server (maybe you also want to include some screenshots here).
-## References
+- Main
 
-* [MockMock server](<https://github.com/tweakers/MockMock>) on GitHub. Pay attention to this [pull request](https://github.com/tweakers/MockMock/pull/8). While it has not been merged, it will give you the solution to compile the project on your machine.
-* The [mailtrap](<https://mailtrap.io/>) online service for testing SMTP
-* The [SMTP RFC](<https://tools.ietf.org/html/rfc5321#appendix-D>), and in particular the [example scenario](<https://tools.ietf.org/html/rfc5321#appendix-D>)
-* Testing SMTP with TLS: `openssl s_client -connect smtp.mailtrap.io:2525 -starttls smtp -crlf`
+C'est ici qu'est executé le programme. Un configuration manager, prank generator et smtp client sont créés, le prank generator fourni alors une liste de pranks qui seront envoyées par mail grâce au smtp client.
 
+- Prank
+
+Cette classe crée les mails piégés. L'envoyeur, le récepteur, les copies carbones, le sujet ainsi que le corps du mail sont définis ici.
+
+- Groupe
+
+Définit les méthodes pour créer un groupe contenant des personnes.
+
+- Personne
+
+Cette classe représente les personnes à pranker.
+
+- Message     
+
+Cette classe permets de modifier ou récupérer certaines parties spécifiques d'un mail. Ces parties sont le sujet, le corps, l'envoyeur, les destinataire et les copies carbones.
