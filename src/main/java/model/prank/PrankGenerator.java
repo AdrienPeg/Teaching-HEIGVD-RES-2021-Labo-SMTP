@@ -18,7 +18,7 @@ public class PrankGenerator {
 
     public List<Prank> generatePranks()throws IOException {
         List<Prank> pranks = new ArrayList<>();
-
+        //on récupère les messages
         List<String> messages = confManager.getMessages();
         int numMsg = 0;
 
