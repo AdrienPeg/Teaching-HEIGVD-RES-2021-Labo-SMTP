@@ -1,5 +1,11 @@
 package main.java.smtp;
 
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ * Interface smtp client
+ */
+
 import main.java.model.mail.Message;
 
 import java.io.IOException;

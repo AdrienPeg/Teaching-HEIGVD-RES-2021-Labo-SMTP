@@ -1,5 +1,7 @@
 # Teaching-HEIGVD-RES-2021-Labo-SMTP
 
+Par Michael Ruckstuhl est Adrien Peguiron
+
 ## Description
 
 Ce projet a pour but de générer des e-mails à partir de fausses adresses pour faire des blagues à vos amis. Les messages sont envoyés à des groupes d'au moins trois personnes dont une est aléatoirement choisie pour envoyer le mail.  Vous pouvez entièrement customiser l'adresse d'envoi ainsi que les destinataires et les messages envoyés. Le mieux dans tout ça, vous victimes ne sauront jamais que c'est vous derrière le mail du prince du nigeria leur offrant 50 millions. 
@@ -18,6 +20,17 @@ MockMock est désormais lancé et prêt à être utilisé sur le port 25 pour SM
 Si vous souhaitez changer les port SMTP et HTTP, vous pouvez le faire au lancement : `java -jar MockMock.jar -p SmtpPort -h HttpPort`
 
 Sources : https://github.com/tweakers/MockMock
+
+## Mise en place d'un serveur "mock SMTP" via Docker
+
+Dans le dossier docker se trouve un jar permettant dans lancer MockMock qui écoutera sur le port 25 et écrira les mail sur le port 8282
+
+Pour le lancer, dans le dossier docker en ligne de commande, taper les commandes suivantes:
+
+> docker build --tag monmock .  
+> docker run -p 25:25 8282:8282 monmock
+
+Lorsque vous lancerez le labo SMTP, les mail reçu sont visble sur le http://localhost:8282/ de la machine host.
 
 ## Utiliser le programme.
 

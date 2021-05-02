@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ *
+ * C'est ici qu'est executé le programme. Un configuration manager, prank generator et smtp client sont créés, le prank generator fourni alors une liste de pranks qui seront envoyées par mail grâce au smtp client.
+ */
+
 package main.java;
 
 import main.java.config.ConfigurationManager;

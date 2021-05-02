@@ -1,5 +1,12 @@
 package main.java.model.prank;
 
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ *
+ * Cette classe se charge de créer les groupes qui seront piégés ainsi que de créer une prank pour chaque groupe.
+ */
+
 import main.java.config.IConfigurationManager;
 import main.java.model.mail.Groupe;
 import main.java.model.mail.Personne;
@@ -11,6 +18,7 @@ import java.util.List;
 
 public class PrankGenerator {
     private final IConfigurationManager confManager;
+
 
     public PrankGenerator(IConfigurationManager confManager){
         this.confManager = confManager;

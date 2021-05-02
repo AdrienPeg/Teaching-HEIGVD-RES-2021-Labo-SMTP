@@ -1,5 +1,12 @@
 package main.java.model.mail;
 
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ *
+ * Définit les méthodes pour créer un groupe contenant des personnes.
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 

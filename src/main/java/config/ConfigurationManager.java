@@ -1,5 +1,12 @@
 package main.java.config;
 
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ *
+ * Cette classe permet de récupérer toutes les informations importantes pour créer les pranks. Son but est de récupérer les données enregistrées dans les fichiers de configurations pour ensuite les transférer à PrankGenerator. ConfigurationManager implémente l'interface IConfigurationManager
+ */
+
 import main.java.model.mail.Personne;
 
 import java.io.BufferedReader;

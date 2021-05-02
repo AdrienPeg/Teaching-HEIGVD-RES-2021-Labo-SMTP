@@ -1,11 +1,16 @@
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ *
+ * Cette classe permet d'envoyer les mails de prank avec le protocole SMTP puis de fermer la connexion SMTP. SmtpClient implémente l'interface ISmtpClient.
+ */
+
 package main.java.smtp;
 
 import main.java.model.mail.Message;
 
 import java.io.*;
 import java.net.Socket;
-
-
 
 public class SmtpClient implements ISmtpClient {
 
@@ -15,7 +20,13 @@ public class SmtpClient implements ISmtpClient {
     private PrintWriter writer;
     private BufferedReader reader;
 
-    public SmtpClient(String smtpServerAddress, int port){
+    /**
+     * Constructeur
+     *
+     * @param smtpServerAddress adresse du serveur
+     * @param port              numéro de port
+     */
+    public SmtpClient(String smtpServerAddress, int port) {
         this.smtpServerAddress = smtpServerAddress;
         this.smtpServerPort = port;
     }
@@ -27,96 +38,137 @@ public class SmtpClient implements ISmtpClient {
         writer = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8"), true);
         reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
 
+        // Lecture de connexion
         String line = reader.readLine();
         System.out.println(line);
 
-        writer.print("EHLO localhost\r\n");
-        writer.flush();
+        // Envoie du EHLO
+        writer.write("EHLO localhost");
+        nextLine();
         line = reader.readLine();
         System.out.println(line);
 
-        if(!line.startsWith("250")){
+        // Lecture des 250- jusqu'à 250
+        if (!line.startsWith("250")) {
             throw new IOException("error: " + line);
         }
-        while (line.startsWith("250-")){
+        while (line.startsWith("250-")) {
             line = reader.readLine();
             System.out.println(line);
         }
 
+        // Source du Mail
         writer.write("MAIL FROM: ");
         writer.write(message.getFrom());
-        writer.write("\r\n");
-        writer.flush();
+        nextLine();
 
-        line = reader.readLine();
-        System.out.println(line);
+        readAndPrintLine();
 
-        for (String to : message.getTo()){
-            writer.write("RCPT TO: ");
-            writer.write(to);
-            writer.write("\r\n");
-            writer.flush();
+        // Destinations du mail
+        rcptTo(message.getTo());
+        rcptTo(message.getCc());
 
-            line = reader.readLine();
-            System.out.println(line);
-        }
-
-        for (String to : message.getCc()){
-            writer.write("RCPT TO: ");
-            writer.write(to);
-            writer.write("\r\n");
-            writer.flush();
-
-            line = reader.readLine();
-            System.out.println(line);
-        }
-
+        // Les données du mail
         writer.write("DATA");
-        writer.write("\r\n");
-        writer.flush();
+        nextLine();
 
-        line = reader.readLine();
-        System.out.println(line);
+        readAndPrintLine();
 
-        writer.write("Content-Type: text/plain; charset=\"utf-8\"\r\n");
-        writer.write("From: " + message.getFrom() + "\r\n");
-
-        writer.write("To: " + message.getTo()[0]);
-        for (int i = 1; i < message.getTo().length; i++){
-            writer.write(", " + message.getTo()[i]);
-
-        }
+        // format
+        writer.write("Content-Type: text/plain; charset=\"utf-8\"");
         writer.write("\r\n");
 
-        writer.write("Cc: " + message.getCc()[0]);
-        for (int i = 1; i < message.getCc().length; i++){
-            writer.write(", " + message.getCc()[i]);
-
-        }
+        // source
+        writer.write("From: " + message.getFrom());
         writer.write("\r\n");
 
-        writer.flush();
+        // A qui
+        destination("To: ", message.getTo());
 
+        // Copie
+        destination("Cc: ", message.getCc());
+
+        // Copie cachée
+
+        // Sujet
         writer.write("Subject: " + message.getSubject());
 
+        // Fin en-tête
         writer.write("\r\n");
+        nextLine();
 
-        writer.flush();
-
+        // Message
         writer.write(message.getBody());
         writer.write("\r\n");
         writer.write(".");
+        nextLine();
+        readAndPrintLine();
+
+        // QUIT
+        writer.write("QUIT");
+        nextLine();
+
+        close(socket);
+    }
+
+    /**
+     * Destinations dans les en-têtes
+     *
+     * @param s  to/cc/bcc
+     * @param to tableau des destinataires
+     */
+    private void destination(String s, String[] to) {
+        writer.write(s + to[0]);
+        for (int i = 1; i < to.length; i++) {
+            writer.write(", " + to[i]);
+        }
         writer.write("\r\n");
+    }
 
-        writer.flush();
-
+    /**
+     * Lit la ligne suivante et l'imprime
+     *
+     * @throws IOException
+     */
+    private void readAndPrintLine() throws IOException {
+        String line;
         line = reader.readLine();
         System.out.println(line);
+    }
 
-        writer.write("QUIT\r\n");
-        writer.flush();
+    /**
+     * Ferme le writer, le reader et le socket
+     *
+     * @param socket le sockest à fermer
+     * @throws IOException
+     */
+    private void close(Socket socket) throws IOException {
         writer.close();
         reader.close();
         socket.close();
+    }
+
+    /**
+     * Fait un saut de ligne et un flush
+     */
+    private void nextLine() {
+        writer.write("\r\n");
+        writer.flush();
+    }
+
+    /**
+     * Lit un tableau de personne pour les envoyer comme destinataires
+     *
+     * @param to2 Le tableau de personne
+     * @throws IOException
+     */
+    private void rcptTo(String[] to2) throws IOException {
+        String line;
+        for (String to : to2) {
+            writer.write("RCPT TO: ");
+            writer.write(to);
+            nextLine();
+            readAndPrintLine();
+        }
     }
 }

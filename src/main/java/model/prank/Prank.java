@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Michael Ruckstuhl et Adrien Peguiron
+ *
+ * Cette classe crée les mails piégés. L'envoyeur, le récepteur, les copies carbones, le sujet ainsi que le corps du mail sont définis ici.
+ */
+
 package main.java.model.prank;
 
 import main.java.model.mail.Message;
