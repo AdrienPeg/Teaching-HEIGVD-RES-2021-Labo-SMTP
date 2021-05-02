@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class PrankGenerator {
     private final IConfigurationManager confManager;
@@ -19,7 +18,7 @@ public class PrankGenerator {
 
     public List<Prank> generatePranks()throws IOException {
         List<Prank> pranks = new ArrayList<>();
-
+        //on récupère les messages
         List<String> messages = confManager.getMessages();
         int numMsg = 0;
 
@@ -63,7 +62,7 @@ public class PrankGenerator {
         while (victimsRemaining.size() > 0){
             currentGroup = groupes.get(cpt);
             cpt = (cpt + 1) % groupes.size();
-            currentGroup.addMember(victims.remove(0));
+            currentGroup.addMember(victimsRemaining.remove(0));
         }
         return groupes;
     }
