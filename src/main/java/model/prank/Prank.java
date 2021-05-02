@@ -15,22 +15,6 @@ public class Prank {
     private final List<Personne> witnesses = new ArrayList<>();
     private String message;
 
-    public Personne getSender() {
-        return sender;
-    }
-
-    public List<Personne> getVictims() {
-        return victims;
-    }
-
-    public List<Personne> getWitnesses() {
-        return witnesses;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
     public void setSender(Personne sender) {
         this.sender = sender;
     }
@@ -51,9 +35,13 @@ public class Prank {
         Message msg = new Message();
         //on sépare le sujet du corps
         String[] body = message.split("\r\n",2);
-        String[] subject = body[0].split(":", 2);
-        msg.setSubject(subject[1]);
+        //on enlève le "subject:" du message
+        String[] tmp = body[0].split(":", 2);
+        //on sépare le sujet du body
+        String[] subject = tmp[1].split("\n\n",2);
+        msg.setSubject(subject[0]);
         //écriture du corps du message
+        message = subject[1];
         msg.setBody(message + "\r\n" + sender.getFirstName());
         //on destine le message aux victimes
         msg.setTo(victims.stream().map(Personne::getAddress).collect(Collectors.toList()).toArray(new String[]{}));

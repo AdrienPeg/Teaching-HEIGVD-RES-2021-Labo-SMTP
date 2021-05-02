@@ -1,11 +1,9 @@
 package main.java.smtp;
 
 import main.java.model.mail.Message;
-import main.java.smtp.ISmtpClient;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.logging.Logger;
 
 
 
@@ -73,16 +71,6 @@ public class SmtpClient implements ISmtpClient {
             System.out.println(line);
         }
 
-        for (String to : message.getBcc()){
-            writer.write("RCPT TO: ");
-            writer.write(to);
-            writer.write("\r\n");
-            writer.flush();
-
-            line = reader.readLine();
-            System.out.println(line);
-        }
-
         writer.write("DATA");
         writer.write("\r\n");
         writer.flush();
@@ -95,14 +83,14 @@ public class SmtpClient implements ISmtpClient {
 
         writer.write("To: " + message.getTo()[0]);
         for (int i = 1; i < message.getTo().length; i++){
-            writer.write("To: " + message.getTo()[i]);
+            writer.write(", " + message.getTo()[i]);
 
         }
         writer.write("\r\n");
 
-        writer.write("To: " + message.getCc()[0]);
+        writer.write("Cc: " + message.getCc()[0]);
         for (int i = 1; i < message.getCc().length; i++){
-            writer.write("To: " + message.getCc()[i]);
+            writer.write(", " + message.getCc()[i]);
 
         }
         writer.write("\r\n");
