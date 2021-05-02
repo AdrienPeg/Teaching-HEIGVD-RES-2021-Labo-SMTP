@@ -37,7 +37,7 @@ Une fois les 3 fichiers modifiés comme bon vous semble, ouvrez le dossier "Smtp
 
 Ce projet comporte 8 classes et 2 interfaces. Les détails de chaque classe sont indiqués ci-dessous
 
-![image-20210502154720615](C:\Users\Don Peg\AppData\Roaming\Typora\typora-user-images\image-20210502154720615.png)
+<img width="603" alt="uml" src="https://user-images.githubusercontent.com/59923079/116816253-75b67000-ab61-11eb-9af4-701742eb85db.png">
 
 Les fonctions getTo et getCC retournent un tableau de String, mais le logiciel de création d'UML n'acceptait pas les "[]" comme retour de fonction. Il n'acceptait également pas les "<>" comme paramètres de fonction. C'est pourquoi à certains endroit des tirets sont utilisés.
 
