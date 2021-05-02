@@ -29,14 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ebf7281-2daf-4cbe-bb43-6f3248d6a591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/mail/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/mail/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/mail/Personne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/mail/Personne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/smtp/SmtpClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/smtp/SmtpClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/mail/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/mail/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/mail/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/PrankGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/smtp/SmtpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/smtp/SmtpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/prank/Prank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Smpt_Prank/main/java/model/prank/Prank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/prank/Prank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/prank/Prank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,26 +139,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1619961890206" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1619962126793">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1619965434983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619962126793" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1619962126793">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1619965434983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619962126793" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1619962126793">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1619965434983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619962126793" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1619962126793">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1619965434983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619962126793" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1619965434983" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1619965435215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1619965435215" />
     <state x="121" y="51" key="MergeDialog" timestamp="1619959760406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1619959760406" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1619965453334">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1619965453334" />
     <state x="334" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1619959742918">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -179,8 +193,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="2" />
+          <line>34</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/model/prank/Prank.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

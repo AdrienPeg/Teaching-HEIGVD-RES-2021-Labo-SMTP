@@ -34,15 +34,14 @@ public class Prank {
     public Message generateMailMessage(){
         Message msg = new Message();
         //on sépare le sujet du corps
-        String[] body = message.split("\r\n",2);
+        String[] content = message.split("\r\n",2);
         //on enlève le "subject:" du message
-        String[] tmp = body[0].split(":", 2);
+        String[] tmp = content[0].split(":", 2);
         //on sépare le sujet du body
         String[] subject = tmp[1].split("\n\n",2);
-        msg.setSubject(subject[0]);
+        msg.setSubject(subject[0] + "\r\n");
         //écriture du corps du message
-        message = subject[1];
-        msg.setBody(message + "\r\n" + sender.getFirstName());
+        msg.setBody(subject[1] + "\r\n" + sender.getFirstName());
         //on destine le message aux victimes
         msg.setTo(victims.stream().map(Personne::getAddress).collect(Collectors.toList()).toArray(new String[]{}));
         //les témoins sont en cc
